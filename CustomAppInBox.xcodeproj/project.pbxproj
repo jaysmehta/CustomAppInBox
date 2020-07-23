@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07D48E3128349A427D9D43D3 /* Pods_CustomAppInBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB88BA0BA9DF29F1B84E935 /* Pods_CustomAppInBox.framework */; };
+		193757FFC7150DFDED6AC4BA /* Pods_CustomAppInBox_CustomAppInBoxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE45EB7F8EAAA33198E63224 /* Pods_CustomAppInBox_CustomAppInBoxUITests.framework */; };
+		374F3FA63FD5B23CB1319F4A /* Pods_CustomAppInBoxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00691A4990AA91BB7626700 /* Pods_CustomAppInBoxTests.framework */; };
 		7788860224C9453600F06A30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788860124C9453600F06A30 /* AppDelegate.swift */; };
 		7788860424C9453600F06A30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788860324C9453600F06A30 /* SceneDelegate.swift */; };
 		7788860624C9453600F06A30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788860524C9453600F06A30 /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BB88BA0BA9DF29F1B84E935 /* Pods_CustomAppInBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomAppInBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E291350C1E067F1608F6AA /* Pods-CustomAppInBox-CustomAppInBoxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAppInBox-CustomAppInBoxUITests.release.xcconfig"; path = "Target Support Files/Pods-CustomAppInBox-CustomAppInBoxUITests/Pods-CustomAppInBox-CustomAppInBoxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		70D3CEBFD9D6BE7474021499 /* Pods-CustomAppInBoxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAppInBoxTests.release.xcconfig"; path = "Target Support Files/Pods-CustomAppInBoxTests/Pods-CustomAppInBoxTests.release.xcconfig"; sourceTree = "<group>"; };
 		778885FE24C9453600F06A30 /* CustomAppInBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAppInBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7788860124C9453600F06A30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7788860324C9453600F06A30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		7788861F24C9453900F06A30 /* CustomAppInBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomAppInBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7788862324C9453900F06A30 /* CustomAppInBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAppInBoxUITests.swift; sourceTree = "<group>"; };
 		7788862524C9453900F06A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F4A06DFA94D7B8248F922B /* Pods-CustomAppInBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAppInBox.release.xcconfig"; path = "Target Support Files/Pods-CustomAppInBox/Pods-CustomAppInBox.release.xcconfig"; sourceTree = "<group>"; };
+		BCEAE17B057FA481980F84FC /* Pods-CustomAppInBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAppInBox.debug.xcconfig"; path = "Target Support Files/Pods-CustomAppInBox/Pods-CustomAppInBox.debug.xcconfig"; sourceTree = "<group>"; };
+		BE45EB7F8EAAA33198E63224 /* Pods_CustomAppInBox_CustomAppInBoxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomAppInBox_CustomAppInBoxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00691A4990AA91BB7626700 /* Pods_CustomAppInBoxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomAppInBoxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C249BA2B4ABBD576BF06ECA1 /* Pods-CustomAppInBox-CustomAppInBoxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAppInBox-CustomAppInBoxUITests.debug.xcconfig"; path = "Target Support Files/Pods-CustomAppInBox-CustomAppInBoxUITests/Pods-CustomAppInBox-CustomAppInBoxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E81E843D41E251C52F1AC292 /* Pods-CustomAppInBoxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAppInBoxTests.debug.xcconfig"; path = "Target Support Files/Pods-CustomAppInBoxTests/Pods-CustomAppInBoxTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D48E3128349A427D9D43D3 /* Pods_CustomAppInBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374F3FA63FD5B23CB1319F4A /* Pods_CustomAppInBoxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				193757FFC7150DFDED6AC4BA /* Pods_CustomAppInBox_CustomAppInBoxUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21F5B5550955BF00DCC5D76C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCEAE17B057FA481980F84FC /* Pods-CustomAppInBox.debug.xcconfig */,
+				79F4A06DFA94D7B8248F922B /* Pods-CustomAppInBox.release.xcconfig */,
+				C249BA2B4ABBD576BF06ECA1 /* Pods-CustomAppInBox-CustomAppInBoxUITests.debug.xcconfig */,
+				64E291350C1E067F1608F6AA /* Pods-CustomAppInBox-CustomAppInBoxUITests.release.xcconfig */,
+				E81E843D41E251C52F1AC292 /* Pods-CustomAppInBoxTests.debug.xcconfig */,
+				70D3CEBFD9D6BE7474021499 /* Pods-CustomAppInBoxTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		778885F524C9453600F06A30 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				7788861724C9453900F06A30 /* CustomAppInBoxTests */,
 				7788862224C9453900F06A30 /* CustomAppInBoxUITests */,
 				778885FF24C9453600F06A30 /* Products */,
+				21F5B5550955BF00DCC5D76C /* Pods */,
+				DC6FF101943B207CDD3350E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +159,16 @@
 			path = CustomAppInBoxUITests;
 			sourceTree = "<group>";
 		};
+		DC6FF101943B207CDD3350E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BB88BA0BA9DF29F1B84E935 /* Pods_CustomAppInBox.framework */,
+				BE45EB7F8EAAA33198E63224 /* Pods_CustomAppInBox_CustomAppInBoxUITests.framework */,
+				C00691A4990AA91BB7626700 /* Pods_CustomAppInBoxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7788862824C9453900F06A30 /* Build configuration list for PBXNativeTarget "CustomAppInBox" */;
 			buildPhases = (
+				5B0393DD2EAB5DE56BDD02DE /* [CP] Check Pods Manifest.lock */,
 				778885FA24C9453600F06A30 /* Sources */,
 				778885FB24C9453600F06A30 /* Frameworks */,
 				778885FC24C9453600F06A30 /* Resources */,
+				099A885E5E800358253B2185 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7788862B24C9453900F06A30 /* Build configuration list for PBXNativeTarget "CustomAppInBoxTests" */;
 			buildPhases = (
+				CE50C44BA95FE8DDA00FFC6E /* [CP] Check Pods Manifest.lock */,
 				7788861024C9453900F06A30 /* Sources */,
 				7788861124C9453900F06A30 /* Frameworks */,
 				7788861224C9453900F06A30 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7788862E24C9453900F06A30 /* Build configuration list for PBXNativeTarget "CustomAppInBoxUITests" */;
 			buildPhases = (
+				1BEC4E5B63C1985410E9B930 /* [CP] Check Pods Manifest.lock */,
 				7788861B24C9453900F06A30 /* Sources */,
 				7788861C24C9453900F06A30 /* Frameworks */,
 				7788861D24C9453900F06A30 /* Resources */,
+				27AEC5363D147B2A962C03E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +299,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		099A885E5E800358253B2185 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomAppInBox/Pods-CustomAppInBox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomAppInBox/Pods-CustomAppInBox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomAppInBox/Pods-CustomAppInBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BEC4E5B63C1985410E9B930 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomAppInBox-CustomAppInBoxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27AEC5363D147B2A962C03E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomAppInBox-CustomAppInBoxUITests/Pods-CustomAppInBox-CustomAppInBoxUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomAppInBox-CustomAppInBoxUITests/Pods-CustomAppInBox-CustomAppInBoxUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomAppInBox-CustomAppInBoxUITests/Pods-CustomAppInBox-CustomAppInBoxUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B0393DD2EAB5DE56BDD02DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomAppInBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE50C44BA95FE8DDA00FFC6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomAppInBoxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		778885FA24C9453600F06A30 /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		7788862924C9453900F06A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCEAE17B057FA481980F84FC /* Pods-CustomAppInBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +600,7 @@
 		};
 		7788862A24C9453900F06A30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F4A06DFA94D7B8248F922B /* Pods-CustomAppInBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +619,7 @@
 		};
 		7788862C24C9453900F06A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E81E843D41E251C52F1AC292 /* Pods-CustomAppInBoxTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +642,7 @@
 		};
 		7788862D24C9453900F06A30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D3CEBFD9D6BE7474021499 /* Pods-CustomAppInBoxTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +665,7 @@
 		};
 		7788862F24C9453900F06A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C249BA2B4ABBD576BF06ECA1 /* Pods-CustomAppInBox-CustomAppInBoxUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +686,7 @@
 		};
 		7788863024C9453900F06A30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64E291350C1E067F1608F6AA /* Pods-CustomAppInBox-CustomAppInBoxUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

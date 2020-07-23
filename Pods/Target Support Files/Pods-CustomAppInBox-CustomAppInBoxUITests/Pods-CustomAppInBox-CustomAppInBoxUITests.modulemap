@@ -1,0 +1,6 @@
+framework module Pods_CustomAppInBox_CustomAppInBoxUITests {
+  umbrella header "Pods-CustomAppInBox-CustomAppInBoxUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
