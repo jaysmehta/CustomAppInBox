@@ -187,12 +187,15 @@ static NSManagedObjectContext *privateContext;
 }
 
 - (void)_deleteMessages:(NSArray<CTMessageMO*>*)messages {
+    NSLog(@"Number of before Delete %lu",(unsigned long)messages.count);
     [privateContext performBlock:^{
         for (CTMessageMO *msg in messages) {
             [privateContext deleteObject:msg];
         }
+        NSLog(@"Number of messages after delete %lu",(unsigned long)messages.count);
         [self notifyUpdate];
         [self _save];
+        
     }];
 }
 

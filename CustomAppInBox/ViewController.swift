@@ -17,9 +17,14 @@ class ViewController: UIViewController {
     
     var messages : [CleverTapInboxMessage] = [] {
         didSet{
-            appInBoxTableView.delegate = self
-            appInBoxTableView.dataSource = self
-            appInBoxTableView.reloadData()
+            
+            DispatchQueue.main.async {
+                self.appInBoxTableView.delegate = self
+                self.appInBoxTableView.dataSource = self
+                self.appInBoxTableView.reloadData()
+            }
+            
+            
         }
     }
     
@@ -40,11 +45,19 @@ class ViewController: UIViewController {
     
     func setupUI() {
         self.title = "Notifications"
+        let next = UIBarButtonItem(title: "Next", style: .done, target: self, action: #selector(nextClicked))
+        self.navigationItem.rightBarButtonItem = next
     }
     
     func initialiseAppInbox() {
         CleverTap.sharedInstance()?.initializeInbox(callback: { (success) in
             if success {
+                CleverTap.sharedInstance()?.registerInboxUpdatedBlock({
+                    let messageCount = CleverTap.sharedInstance()?.getInboxMessageCount()
+                    print("Messages \(String(describing: messageCount!))")
+                    print("All Inbox Messages \(String(describing: CleverTap.sharedInstance()?.getAllInboxMessages().count))")
+                })
+                
                 self.getMessages()
             }
         })
@@ -55,6 +68,9 @@ class ViewController: UIViewController {
         messages = (CleverTap.sharedInstance()?.getAllInboxMessages())!
     }
     
+    @objc func nextClicked() {
+        self.navigationController?.pushViewController((self.storyboard?.instantiateViewController(identifier: "secondVC"))!, animated: true)
+    }
 }
 
 extension ViewController : UITableViewDelegate,UITableViewDataSource, SFSafariViewControllerDelegate {
@@ -65,7 +81,11 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource, SFSafariVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let appCell = tableView.dequeueReusableCell(withIdentifier: "appCell") as! AppInBoxCell
         let messageContent : [CleverTapInboxMessageContent] = messages[indexPath.row].content!
-        appCell.cellImageView.sd_setImage(with: URL(string: messageContent[0].mediaUrl!), completed: nil)
+        if messageContent[0].mediaUrl != nil {
+            appCell.cellImageView.sd_setImage(with: URL(string: messageContent[0].mediaUrl!), completed: nil)
+        }else{
+            appCell.cellImageView.sd_setImage(with: URL(string: ""), completed: nil)
+        }
         appCell.titleLabel.text = messageContent[0].title!
         appCell.messageLabel.text = messageContent[0].message!
         return appCell
@@ -82,6 +102,8 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource, SFSafariVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let messageContent : [CleverTapInboxMessageContent] = messages[indexPath.row].content!
         let urlString = messageContent[0].actionUrl!
+        
+        CleverTap.sharedInstance()?.deleteInboxMessage(forID: messages[indexPath.row].messageId!)
 
         if let url = URL(string: urlString) {
             let vc = SFSafariViewController(url: url, configuration:.init())
@@ -98,6 +120,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource, SFSafariVi
 
 class AppInBoxCell : UITableViewCell {
     
+    @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var cellImageView: UIImageView!
